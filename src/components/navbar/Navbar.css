@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+    color: white;
+}
+.app{
+    display: flex;
+    flex-direction: column
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 50px !important;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar li {
+    cursor: pointer;
+  }
+  
+  .navbar li:hover {
+    text-decoration: underline;
+  }
+
+  h2{
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 700;
+    font-size: 54px;
+  }
+  

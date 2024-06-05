@@ -1,0 +1,33 @@
+.product-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.product-heading {
+    text-align: center;
+}
+
+.product-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.product-item {
+    border: 1px solid white;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+.product-image {
+    margin-bottom: 10px;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
