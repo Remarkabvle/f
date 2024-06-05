@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { usePostProductMutation } from "../../context/api/productApi";
+import "./Create.css";
 
 const initialState = {
     title: "",
@@ -23,14 +24,11 @@ const Create = () => {
         }
     };
 
-    console.log(error);
-
     useEffect(() => {
         if (isSuccess) {
             setFormData(initialState);
         }
-        if
-        (isError) {
+        if (isError) {
             alert(error.data);
         }
     }, [isSuccess, isError]);
@@ -38,18 +36,15 @@ const Create = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         createProduct(formData);
-        
     };
 
-    console.log(data);
-    console.log(error);
     return (
-        <form onSubmit={handleSubmit}>
-            <h2>Create</h2>
-            {Object.keys(initialState)?.map((inp) => (
+        <form className="create-form" onSubmit={handleSubmit}>
+            <h2 className="create-heading">Create</h2>
+            {Object.keys(initialState).map((inp) => (
                 <input
                     key={inp}
-                    className={`form__input ${inp}`}
+                    className="create-input"
                     type={inp === "price" ? "number" : "text"}
                     name={inp}
                     placeholder={inp}
@@ -57,7 +52,7 @@ const Create = () => {
                     onChange={handleChange}
                 />
             ))}
-            <button>Create</button>
+            <button className="create-button" type="submit">Create</button>
         </form>
     );
 };

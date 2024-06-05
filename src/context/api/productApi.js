@@ -2,7 +2,6 @@ import { api } from "./api";
 
 export const productApi = api.injectEndpoints({
     endpoints: (build) => ({
-        // Get request
         getProducts: build.query({
             query: () => ({
                 url: "/products",

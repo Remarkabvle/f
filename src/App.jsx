@@ -19,7 +19,7 @@ const App = () => {
         {currentPage === 'home' && <h2>Welcome to the Home Page</h2>}
         {currentPage === 'products' && <Product />}
         {currentPage === 'create' && <Create />}
-        {currentPage === 'manage' && <Admin />}
+        {currentPage === 'manage' && <Product />}
         {currentPage === 'admin' && <Admin />}
       </div>
     </div>
